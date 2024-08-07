@@ -30,18 +30,22 @@ class ElectricalNetworkGenerator:
             num_children = random.randint(1, self.num_children_per_node)
             for cct_index in range(num_of_ccts):
                 circuit_type = random.choice(["Single-phase", "Three-phase"])
-                board["circuits"].append({
-                        "circuit_number": cct_index,
-                        "circuit_type": circuit_type
-                    })
-                
+                circuit = {
+                    "circuit_number": cct_index,
+                    "circuit_type": circuit_type,
+                    "child_board": None
+                }
+
                 str_print = (f"circuit-{cct_index} phase-{str_phase}")
                 print(Indent(str_print, 10*level))
                 
-                #for _ in range(num_children):
-                print(Indent("|  ", 10*level))
-                print(Indent("_______", 10*level))
-                child_board = self.generate_board(level + 1,cct_index,str_phase )
+                if num_children > 0:
+                    print(Indent("|  ", 10*level))
+                    print(Indent("_______", 10*level))
+                    child_board = self.generate_board(level + 1, cct_index, str_phase)
+                    circuit["child_board"] = child_board
+
+                board["circuits"].append(circuit)
 
         return board
 
@@ -73,7 +77,7 @@ def charprint(char, num_times):
 
 def main():
     # Parameters
-    num_roots = 1
+    num_roots = 2
     num_levels = 3
     num_children_per_node = 3
 
@@ -81,11 +85,11 @@ def main():
     generator = ElectricalNetworkGenerator(num_roots, num_levels, num_children_per_node)
     network_data = generator.generate_network_data()
 
- # Convert to JSON format
+    # Convert to JSON format
     network_json = json.dumps(network_data, indent=4)
 
     # Print JSON to console (optional)
-   # print(network_json)
+    # print(network_json)
 
     # Write JSON to a file
     with open('network_data.json', 'w') as json_file:
