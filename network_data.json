@@ -1,0 +1,21 @@
+[
+    {
+        "node_id": 1,
+        "name": "DistributionBoard: Level: 1",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_type": "Single-phase"
+            },
+            {
+                "circuit_number": 1,
+                "circuit_type": "Three-phase"
+            },
+            {
+                "circuit_number": 2,
+                "circuit_type": "Single-phase"
+            }
+        ],
+        "phase": "Single-phase"
+    }
+]
