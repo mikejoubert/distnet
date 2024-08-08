@@ -4,21 +4,42 @@
         "parent_node_id": 2,
         "name": "DistributionBoard: Level: 3",
         "circuits": [],
-        "phase": "Single-phase"
+        "phase": "Three-phase"
     },
     {
         "node_id": 4,
         "parent_node_id": 2,
         "name": "DistributionBoard: Level: 3",
         "circuits": [],
-        "phase": "Single-phase"
+        "phase": "Three-phase"
     },
     {
         "node_id": 5,
         "parent_node_id": 2,
         "name": "DistributionBoard: Level: 3",
         "circuits": [],
-        "phase": "Single-phase"
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 6,
+        "parent_node_id": 2,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 7,
+        "parent_node_id": 2,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 8,
+        "parent_node_id": 2,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
     },
     {
         "node_id": 2,
@@ -27,109 +48,952 @@
         "circuits": [
             {
                 "circuit_number": 0,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 0,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 0,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 3
+            },
+            {
+                "circuit_number": 0,
+                "circuit_phase": "L3",
                 "circuit_type": "Three-phase",
                 "child_node_id": 3
             },
             {
                 "circuit_number": 1,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 4
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L3",
                 "circuit_type": "Three-phase",
                 "child_node_id": 4
             },
             {
                 "circuit_number": 2,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "L3",
                 "circuit_type": "Three-phase",
                 "child_node_id": 5
-            }
-        ],
-        "phase": "Single-phase"
-    },
-    {
-        "node_id": 7,
-        "parent_node_id": 6,
-        "name": "DistributionBoard: Level: 3",
-        "circuits": [],
-        "phase": "Single-phase"
-    },
-    {
-        "node_id": 8,
-        "parent_node_id": 6,
-        "name": "DistributionBoard: Level: 3",
-        "circuits": [],
-        "phase": "Single-phase"
-    },
-    {
-        "node_id": 9,
-        "parent_node_id": 6,
-        "name": "DistributionBoard: Level: 3",
-        "circuits": [],
-        "phase": "Single-phase"
-    },
-    {
-        "node_id": 6,
-        "parent_node_id": 1,
-        "name": "DistributionBoard: Level: 2",
-        "circuits": [
+            },
             {
-                "circuit_number": 0,
+                "circuit_number": 2,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 5
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 6
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 6
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "S",
                 "circuit_type": "Single-phase",
                 "child_node_id": 7
             },
             {
-                "circuit_number": 1,
+                "circuit_number": 4,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 7
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "L3",
                 "circuit_type": "Three-phase",
                 "child_node_id": 8
             },
             {
-                "circuit_number": 2,
+                "circuit_number": 5,
+                "circuit_phase": "L3",
                 "circuit_type": "Three-phase",
-                "child_node_id": 9
+                "child_node_id": 8
             }
         ],
-        "phase": "Single-phase"
-    },
-    {
-        "node_id": 11,
-        "parent_node_id": 10,
-        "name": "DistributionBoard: Level: 3",
-        "circuits": [],
-        "phase": "Single-phase"
-    },
-    {
-        "node_id": 12,
-        "parent_node_id": 10,
-        "name": "DistributionBoard: Level: 3",
-        "circuits": [],
-        "phase": "Single-phase"
-    },
-    {
-        "node_id": 13,
-        "parent_node_id": 10,
-        "name": "DistributionBoard: Level: 3",
-        "circuits": [],
-        "phase": "Single-phase"
+        "phase": "Three-phase"
     },
     {
         "node_id": 10,
+        "parent_node_id": 9,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 11,
+        "parent_node_id": 9,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 12,
+        "parent_node_id": 9,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 13,
+        "parent_node_id": 9,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 14,
+        "parent_node_id": 9,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 15,
+        "parent_node_id": 9,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 9,
         "parent_node_id": 1,
         "name": "DistributionBoard: Level: 2",
         "circuits": [
             {
                 "circuit_number": 0,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 10
+            },
+            {
+                "circuit_number": 0,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 10
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L3",
                 "circuit_type": "Three-phase",
                 "child_node_id": 11
             },
             {
                 "circuit_number": 1,
-                "circuit_type": "Single-phase",
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 11
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
                 "child_node_id": 12
             },
             {
                 "circuit_number": 2,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 12
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "L3",
                 "circuit_type": "Three-phase",
                 "child_node_id": 13
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 13
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 14
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 14
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 15
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 15
             }
         ],
-        "phase": "Single-phase"
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 17,
+        "parent_node_id": 16,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 18,
+        "parent_node_id": 16,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 19,
+        "parent_node_id": 16,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 20,
+        "parent_node_id": 16,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 21,
+        "parent_node_id": 16,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 22,
+        "parent_node_id": 16,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 16,
+        "parent_node_id": 1,
+        "name": "DistributionBoard: Level: 2",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 17
+            },
+            {
+                "circuit_number": 0,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 17
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 18
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 18
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 19
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 19
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 20
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 20
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 21
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 21
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 22
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 22
+            }
+        ],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 24,
+        "parent_node_id": 23,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 25,
+        "parent_node_id": 23,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 26,
+        "parent_node_id": 23,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 27,
+        "parent_node_id": 23,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 28,
+        "parent_node_id": 23,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 29,
+        "parent_node_id": 23,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 23,
+        "parent_node_id": 1,
+        "name": "DistributionBoard: Level: 2",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 24
+            },
+            {
+                "circuit_number": 0,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 24
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 25
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 25
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 26
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 26
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 27
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 27
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 28
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 28
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 29
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 29
+            }
+        ],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 31,
+        "parent_node_id": 30,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 32,
+        "parent_node_id": 30,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 33,
+        "parent_node_id": 30,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 34,
+        "parent_node_id": 30,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 35,
+        "parent_node_id": 30,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 36,
+        "parent_node_id": 30,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 30,
+        "parent_node_id": 1,
+        "name": "DistributionBoard: Level: 2",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 31
+            },
+            {
+                "circuit_number": 0,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 31
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 32
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 32
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 33
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 33
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 34
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 34
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 35
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 35
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 36
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 36
+            }
+        ],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 38,
+        "parent_node_id": 37,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 39,
+        "parent_node_id": 37,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 40,
+        "parent_node_id": 37,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 41,
+        "parent_node_id": 37,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 42,
+        "parent_node_id": 37,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 43,
+        "parent_node_id": 37,
+        "name": "DistributionBoard: Level: 3",
+        "circuits": [],
+        "phase": "Three-phase"
+    },
+    {
+        "node_id": 37,
+        "parent_node_id": 1,
+        "name": "DistributionBoard: Level: 2",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 0,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 0,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 38
+            },
+            {
+                "circuit_number": 0,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 38
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 39
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 39
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 40
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 40
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 41
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 41
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 42
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 42
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 43
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 43
+            }
+        ],
+        "phase": "Three-phase"
     },
     {
         "node_id": 1,
@@ -138,20 +1002,125 @@
         "circuits": [
             {
                 "circuit_number": 0,
-                "circuit_type": "Single-phase",
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 0,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 0,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 2
+            },
+            {
+                "circuit_number": 0,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
                 "child_node_id": 2
             },
             {
                 "circuit_number": 1,
+                "circuit_phase": "S",
                 "circuit_type": "Single-phase",
-                "child_node_id": 6
+                "child_node_id": 9
+            },
+            {
+                "circuit_number": 1,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 9
             },
             {
                 "circuit_number": 2,
+                "circuit_phase": "S",
                 "circuit_type": "Single-phase",
-                "child_node_id": 10
+                "child_node_id": 16
+            },
+            {
+                "circuit_number": 2,
+                "circuit_phase": "S",
+                "circuit_type": "Single-phase",
+                "child_node_id": 16
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 23
+            },
+            {
+                "circuit_number": 3,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 23
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 30
+            },
+            {
+                "circuit_number": 4,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 30
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "L1",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "L2",
+                "circuit_type": "Three-phase",
+                "child_node_id": null
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 37
+            },
+            {
+                "circuit_number": 5,
+                "circuit_phase": "L3",
+                "circuit_type": "Three-phase",
+                "child_node_id": 37
             }
         ],
-        "phase": "Single-phase"
+        "phase": "Three-phase"
     }
 ]
