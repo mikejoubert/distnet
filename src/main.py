@@ -19,27 +19,30 @@ class ElectricalNetworkGenerator:
             "node_id": self.node_id,
             "parent_node_id": parent_id,
             "name": f"DistributionBoard: Level: {level}",
-            "circuits": [],
-            "phase": str_board_phase
+            "phase": str_board_phase,
+            "circuits": []
         }
-        str_print = (f"Dist Board(indent{level}) fed from cct {position}, phase-{str_board_phase}")
-        print(Indent(str_print, 10*level))
+        if level == self.num_levels:
+            str_print = (f"Dist Board(indent{level}) fed from cct {position}, board phase-{str_board_phase} - FINAL")
+        else:
+            str_print = (f"Dist Board(indent{level}) fed from cct {position}, board phase-{str_board_phase}")
+        print(Indent(str_print, 5*level))
         
         current_id = self.node_id
         self.node_id += 1
 
         if level < self.num_levels:
-            num_of_ccts = 6
-            num_children = random.randint(1, self.num_children_per_node)
+            num_of_ccts = 3
+            # num_children = random.randint(1, self.num_children_per_node)
+            num_children = 4
             for cct_index in range(num_of_ccts):
                 if str_board_phase == "Three-phase":
-                    circuit_type = random.choice(["Single-phase", "Three-phase"])
-                else:
-                    circuit_type = "Single-phase"
-                if circuit_type =="Three-phase":
                     lst_cct_phases = ["L1", "L2", "L3"]
+                    circuit_type = random.choice(["RING", "RAD", "TP"])
                 else:
                     lst_cct_phases = ["S"]
+                    circuit_type = random.choice(["RING", "RAD"])
+
 
                 for str_cct_phase in lst_cct_phases:
                     circuit = {
@@ -48,18 +51,16 @@ class ElectricalNetworkGenerator:
                         "circuit_type": circuit_type,
                         "child_node_id": None
                     }
-                    str_print = (f"circuit-{cct_index} phase-{str_cct_phase}")
-                    print(Indent(str_print, 10*level))
-                    board["circuits"].append(circuit)
-                
-                
-                if num_children > 0:
-                    print(Indent("|  ", 10*level))
-                    print(Indent("_______", 10*level))
-                    child_board = self.generate_board(level + 1, cct_index, str_board_phase, current_id)
-                    circuit["child_node_id"] = child_board["node_id"]
 
-                board["circuits"].append(circuit)
+                    if num_children > 0:
+                        print(Indent("|  ", 5*level))
+                        print(Indent("_______", 5*level))
+                        str_print = (f"level:{level}, circuit-{cct_index} phase-{str_cct_phase} circuit type={circuit_type} not final")
+                        print(Indent(str_print, 5*level))
+                        child_board = self.generate_board(level + 1, cct_index, str_board_phase, current_id)
+                        circuit["child_node_id"] = child_board["node_id"]
+
+                    board["circuits"].append(circuit)
 
         self.boards.append(board)
         return board
@@ -92,7 +93,7 @@ def main():
     # Parameters
     num_roots = 1
     num_levels = 3
-    num_children_per_node = 3
+    num_children_per_node = 2
 
     # Generate Electrical Distribution Network data
     generator = ElectricalNetworkGenerator(num_roots, num_levels, num_children_per_node)
