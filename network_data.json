@@ -1,175 +1,61 @@
 [
     {
-        "node_id": 3,
-        "board_parent_node_id": 2,
-        "name": "DistributionBoard: Level: 3: 3",
-        "board_section": "NORTH",
-        "board_floor": "3RD",
-        "phase": "Three-phase",
+        "node_id": 5,
+        "board_parent_node_id": 4,
+        "name": "DistributionBoard: Level: 5: 5",
+        "board_section": "EAST",
+        "board_floor": "2ND",
+        "phase": "Single-phase",
         "circuits": []
     },
     {
         "node_id": 4,
-        "board_parent_node_id": 2,
-        "name": "DistributionBoard: Level: 3: 4",
-        "board_section": "EXTERNAL",
-        "board_floor": "3RD",
-        "phase": "Three-phase",
-        "circuits": []
+        "board_parent_node_id": 3,
+        "name": "DistributionBoard: Level: 4: 4",
+        "board_section": "SOUTH",
+        "board_floor": "1ST",
+        "phase": "Single-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 4,
+                "circuit_phase": "S",
+                "circuit_type": "RAD",
+                "child_board_node_id": 5
+            }
+        ]
     },
     {
-        "node_id": 5,
+        "node_id": 3,
         "board_parent_node_id": 2,
-        "name": "DistributionBoard: Level: 3: 5",
-        "board_section": "NORTH",
+        "name": "DistributionBoard: Level: 3: 3",
+        "board_section": "SOUTH",
         "board_floor": "3RD",
-        "phase": "Three-phase",
-        "circuits": []
+        "phase": "Single-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 3,
+                "circuit_phase": "S",
+                "circuit_type": "RING",
+                "child_board_node_id": 4
+            }
+        ]
     },
     {
         "node_id": 2,
         "board_parent_node_id": 1,
         "name": "DistributionBoard: Level: 2: 2",
         "board_section": "NORTH",
-        "board_floor": "G",
-        "phase": "Three-phase",
+        "board_floor": "1ST",
+        "phase": "Single-phase",
         "circuits": [
             {
                 "circuit_number": 0,
                 "circuit_level": 2,
-                "circuit_phase": "L1",
+                "circuit_phase": "S",
                 "circuit_type": "RING",
                 "child_board_node_id": 3
-            },
-            {
-                "circuit_number": 0,
-                "circuit_level": 2,
-                "circuit_phase": "L2",
-                "circuit_type": "RING",
-                "child_board_node_id": 4
-            },
-            {
-                "circuit_number": 0,
-                "circuit_level": 2,
-                "circuit_phase": "L3",
-                "circuit_type": "RING",
-                "child_board_node_id": 5
-            }
-        ]
-    },
-    {
-        "node_id": 7,
-        "board_parent_node_id": 6,
-        "name": "DistributionBoard: Level: 3: 7",
-        "board_section": "SOUTH",
-        "board_floor": "3RD",
-        "phase": "Three-phase",
-        "circuits": []
-    },
-    {
-        "node_id": 8,
-        "board_parent_node_id": 6,
-        "name": "DistributionBoard: Level: 3: 8",
-        "board_section": "NORTH",
-        "board_floor": "1ST",
-        "phase": "Three-phase",
-        "circuits": []
-    },
-    {
-        "node_id": 9,
-        "board_parent_node_id": 6,
-        "name": "DistributionBoard: Level: 3: 9",
-        "board_section": "WEST",
-        "board_floor": "2ND",
-        "phase": "Three-phase",
-        "circuits": []
-    },
-    {
-        "node_id": 6,
-        "board_parent_node_id": 1,
-        "name": "DistributionBoard: Level: 2: 6",
-        "board_section": "NORTH",
-        "board_floor": "LG",
-        "phase": "Three-phase",
-        "circuits": [
-            {
-                "circuit_number": 0,
-                "circuit_level": 2,
-                "circuit_phase": "L1",
-                "circuit_type": "RING",
-                "child_board_node_id": 7
-            },
-            {
-                "circuit_number": 0,
-                "circuit_level": 2,
-                "circuit_phase": "L2",
-                "circuit_type": "RING",
-                "child_board_node_id": 8
-            },
-            {
-                "circuit_number": 0,
-                "circuit_level": 2,
-                "circuit_phase": "L3",
-                "circuit_type": "RING",
-                "child_board_node_id": 9
-            }
-        ]
-    },
-    {
-        "node_id": 11,
-        "board_parent_node_id": 10,
-        "name": "DistributionBoard: Level: 3: 11",
-        "board_section": "SOUTH",
-        "board_floor": "G",
-        "phase": "Three-phase",
-        "circuits": []
-    },
-    {
-        "node_id": 12,
-        "board_parent_node_id": 10,
-        "name": "DistributionBoard: Level: 3: 12",
-        "board_section": "WEST",
-        "board_floor": "3RD",
-        "phase": "Three-phase",
-        "circuits": []
-    },
-    {
-        "node_id": 13,
-        "board_parent_node_id": 10,
-        "name": "DistributionBoard: Level: 3: 13",
-        "board_section": "SOUTH",
-        "board_floor": "1ST",
-        "phase": "Three-phase",
-        "circuits": []
-    },
-    {
-        "node_id": 10,
-        "board_parent_node_id": 1,
-        "name": "DistributionBoard: Level: 2: 10",
-        "board_section": "WEST",
-        "board_floor": "LG",
-        "phase": "Three-phase",
-        "circuits": [
-            {
-                "circuit_number": 0,
-                "circuit_level": 2,
-                "circuit_phase": "L1",
-                "circuit_type": "RAD",
-                "child_board_node_id": 11
-            },
-            {
-                "circuit_number": 0,
-                "circuit_level": 2,
-                "circuit_phase": "L2",
-                "circuit_type": "RAD",
-                "child_board_node_id": 12
-            },
-            {
-                "circuit_number": 0,
-                "circuit_level": 2,
-                "circuit_phase": "L3",
-                "circuit_type": "RAD",
-                "child_board_node_id": 13
             }
         ]
     },
@@ -177,30 +63,393 @@
         "node_id": 1,
         "board_parent_node_id": null,
         "name": "DistributionBoard: Level: 1: 1",
+        "board_section": "NORTH",
+        "board_floor": "2ND",
+        "phase": "Single-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 1,
+                "circuit_phase": "S",
+                "circuit_type": "RING",
+                "child_board_node_id": 2
+            }
+        ]
+    },
+    {
+        "node_id": 10,
+        "board_parent_node_id": 9,
+        "name": "DistributionBoard: Level: 5: 10",
+        "board_section": "NORTH",
+        "board_floor": "3RD",
+        "phase": "Single-phase",
+        "circuits": []
+    },
+    {
+        "node_id": 9,
+        "board_parent_node_id": 8,
+        "name": "DistributionBoard: Level: 4: 9",
+        "board_section": "SOUTH",
+        "board_floor": "LG",
+        "phase": "Single-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 4,
+                "circuit_phase": "S",
+                "circuit_type": "RING",
+                "child_board_node_id": 10
+            }
+        ]
+    },
+    {
+        "node_id": 8,
+        "board_parent_node_id": 7,
+        "name": "DistributionBoard: Level: 3: 8",
         "board_section": "EXTERNAL",
         "board_floor": "LG",
+        "phase": "Single-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 3,
+                "circuit_phase": "S",
+                "circuit_type": "RAD",
+                "child_board_node_id": 9
+            }
+        ]
+    },
+    {
+        "node_id": 7,
+        "board_parent_node_id": 6,
+        "name": "DistributionBoard: Level: 2: 7",
+        "board_section": "WEST",
+        "board_floor": "G",
+        "phase": "Single-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 2,
+                "circuit_phase": "S",
+                "circuit_type": "RING",
+                "child_board_node_id": 8
+            }
+        ]
+    },
+    {
+        "node_id": 14,
+        "board_parent_node_id": 13,
+        "name": "DistributionBoard: Level: 5: 14",
+        "board_section": "SOUTH",
+        "board_floor": "3RD",
+        "phase": "Single-phase",
+        "circuits": []
+    },
+    {
+        "node_id": 13,
+        "board_parent_node_id": 12,
+        "name": "DistributionBoard: Level: 4: 13",
+        "board_section": "EAST",
+        "board_floor": "LG",
+        "phase": "Single-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 4,
+                "circuit_phase": "S",
+                "circuit_type": "RAD",
+                "child_board_node_id": 14
+            }
+        ]
+    },
+    {
+        "node_id": 12,
+        "board_parent_node_id": 11,
+        "name": "DistributionBoard: Level: 3: 12",
+        "board_section": "EAST",
+        "board_floor": "2ND",
+        "phase": "Single-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 3,
+                "circuit_phase": "S",
+                "circuit_type": "RING",
+                "child_board_node_id": 13
+            }
+        ]
+    },
+    {
+        "node_id": 11,
+        "board_parent_node_id": 6,
+        "name": "DistributionBoard: Level: 2: 11",
+        "board_section": "SOUTH",
+        "board_floor": "G",
+        "phase": "Single-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 2,
+                "circuit_phase": "S",
+                "circuit_type": "RAD",
+                "child_board_node_id": 12
+            }
+        ]
+    },
+    {
+        "node_id": 18,
+        "board_parent_node_id": 17,
+        "name": "DistributionBoard: Level: 5: 18",
+        "board_section": "EXTERNAL",
+        "board_floor": "2ND",
+        "phase": "Single-phase",
+        "circuits": []
+    },
+    {
+        "node_id": 17,
+        "board_parent_node_id": 16,
+        "name": "DistributionBoard: Level: 4: 17",
+        "board_section": "EXTERNAL",
+        "board_floor": "2ND",
+        "phase": "Single-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 4,
+                "circuit_phase": "S",
+                "circuit_type": "RAD",
+                "child_board_node_id": 18
+            }
+        ]
+    },
+    {
+        "node_id": 16,
+        "board_parent_node_id": 15,
+        "name": "DistributionBoard: Level: 3: 16",
+        "board_section": "SOUTH",
+        "board_floor": "LG",
+        "phase": "Single-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 3,
+                "circuit_phase": "S",
+                "circuit_type": "RAD",
+                "child_board_node_id": 17
+            }
+        ]
+    },
+    {
+        "node_id": 21,
+        "board_parent_node_id": 20,
+        "name": "DistributionBoard: Level: 5: 21",
+        "board_section": "WEST",
+        "board_floor": "2ND",
+        "phase": "Single-phase",
+        "circuits": []
+    },
+    {
+        "node_id": 20,
+        "board_parent_node_id": 19,
+        "name": "DistributionBoard: Level: 4: 20",
+        "board_section": "EXTERNAL",
+        "board_floor": "3RD",
+        "phase": "Single-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 4,
+                "circuit_phase": "S",
+                "circuit_type": "RAD",
+                "child_board_node_id": 21
+            }
+        ]
+    },
+    {
+        "node_id": 23,
+        "board_parent_node_id": 22,
+        "name": "DistributionBoard: Level: 5: 23",
+        "board_section": "EXTERNAL",
+        "board_floor": "G",
+        "phase": "Single-phase",
+        "circuits": []
+    },
+    {
+        "node_id": 22,
+        "board_parent_node_id": 19,
+        "name": "DistributionBoard: Level: 4: 22",
+        "board_section": "NORTH",
+        "board_floor": "LG",
+        "phase": "Single-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 4,
+                "circuit_phase": "S",
+                "circuit_type": "RING",
+                "child_board_node_id": 23
+            }
+        ]
+    },
+    {
+        "node_id": 25,
+        "board_parent_node_id": 24,
+        "name": "DistributionBoard: Level: 5: 25",
+        "board_section": "WEST",
+        "board_floor": "LG",
+        "phase": "Single-phase",
+        "circuits": []
+    },
+    {
+        "node_id": 24,
+        "board_parent_node_id": 19,
+        "name": "DistributionBoard: Level: 4: 24",
+        "board_section": "EAST",
+        "board_floor": "2ND",
+        "phase": "Single-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 4,
+                "circuit_phase": "S",
+                "circuit_type": "RAD",
+                "child_board_node_id": 25
+            }
+        ]
+    },
+    {
+        "node_id": 19,
+        "board_parent_node_id": 15,
+        "name": "DistributionBoard: Level: 3: 19",
+        "board_section": "EAST",
+        "board_floor": "1ST",
+        "phase": "Three-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 3,
+                "circuit_phase": "L1",
+                "circuit_type": "RING",
+                "child_board_node_id": 20
+            },
+            {
+                "circuit_number": 0,
+                "circuit_level": 3,
+                "circuit_phase": "L2",
+                "circuit_type": "RING",
+                "child_board_node_id": 22
+            },
+            {
+                "circuit_number": 0,
+                "circuit_level": 3,
+                "circuit_phase": "L3",
+                "circuit_type": "RING",
+                "child_board_node_id": 24
+            }
+        ]
+    },
+    {
+        "node_id": 28,
+        "board_parent_node_id": 27,
+        "name": "DistributionBoard: Level: 5: 28",
+        "board_section": "EAST",
+        "board_floor": "LG",
+        "phase": "Single-phase",
+        "circuits": []
+    },
+    {
+        "node_id": 27,
+        "board_parent_node_id": 26,
+        "name": "DistributionBoard: Level: 4: 27",
+        "board_section": "SOUTH",
+        "board_floor": "1ST",
+        "phase": "Single-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 4,
+                "circuit_phase": "S",
+                "circuit_type": "RAD",
+                "child_board_node_id": 28
+            }
+        ]
+    },
+    {
+        "node_id": 26,
+        "board_parent_node_id": 15,
+        "name": "DistributionBoard: Level: 3: 26",
+        "board_section": "WEST",
+        "board_floor": "1ST",
+        "phase": "Single-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 3,
+                "circuit_phase": "S",
+                "circuit_type": "RING",
+                "child_board_node_id": 27
+            }
+        ]
+    },
+    {
+        "node_id": 15,
+        "board_parent_node_id": 6,
+        "name": "DistributionBoard: Level: 2: 15",
+        "board_section": "NORTH",
+        "board_floor": "2ND",
+        "phase": "Three-phase",
+        "circuits": [
+            {
+                "circuit_number": 0,
+                "circuit_level": 2,
+                "circuit_phase": "L1",
+                "circuit_type": "RING",
+                "child_board_node_id": 16
+            },
+            {
+                "circuit_number": 0,
+                "circuit_level": 2,
+                "circuit_phase": "L2",
+                "circuit_type": "RING",
+                "child_board_node_id": 19
+            },
+            {
+                "circuit_number": 0,
+                "circuit_level": 2,
+                "circuit_phase": "L3",
+                "circuit_type": "RING",
+                "child_board_node_id": 26
+            }
+        ]
+    },
+    {
+        "node_id": 6,
+        "board_parent_node_id": null,
+        "name": "DistributionBoard: Level: 1: 6",
+        "board_section": "SOUTH",
+        "board_floor": "1ST",
         "phase": "Three-phase",
         "circuits": [
             {
                 "circuit_number": 0,
                 "circuit_level": 1,
                 "circuit_phase": "L1",
-                "circuit_type": "RAD",
-                "child_board_node_id": 2
+                "circuit_type": "TP",
+                "child_board_node_id": 7
             },
             {
                 "circuit_number": 0,
                 "circuit_level": 1,
                 "circuit_phase": "L2",
-                "circuit_type": "RAD",
-                "child_board_node_id": 6
+                "circuit_type": "TP",
+                "child_board_node_id": 11
             },
             {
                 "circuit_number": 0,
                 "circuit_level": 1,
                 "circuit_phase": "L3",
-                "circuit_type": "RAD",
-                "child_board_node_id": 10
+                "circuit_type": "TP",
+                "child_board_node_id": 15
             }
         ]
     }

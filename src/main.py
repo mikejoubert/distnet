@@ -13,14 +13,13 @@ class ElectricalNetworkGenerator:
         if parent_phase == "Single-phase":
             str_board_phase = "Single-phase"
         else: 
-            #str_board_phase = random.choice(["Single-phase", "Three-phase"])
-            str_board_phase = "Three-phase"
+            str_board_phase = random.choice(["Single-phase", "Three-phase"])
+            #str_board_phase = "Three-phase"
         board = {
             "node_id": self.node_id,
             "board_parent_node_id": parent_id,
             "name": f"DistributionBoard: Level: {level}: {self.node_id}",
-            "board_section" : random.choice(["NORTH", "SOUTH","EAST","WEST","EXTERNAL"]),The resulting graphblooks as follows:
-            
+            "board_section" : random.choice(["NORTH", "SOUTH","EAST","WEST","EXTERNAL"]),
             "board_floor": random.choice(["LG", "G","1ST","2ND","3RD"]),
             "phase": str_board_phase,
             "circuits": []
@@ -96,9 +95,9 @@ def charprint(char, num_times):
 
 def main():
     # Parameters
-    num_roots = 1
-    num_levels = 3
-    num_children_per_node = 3
+    num_roots = 2
+    num_levels = 5
+    num_children_per_node = 5
 
     # Generate Electrical Distribution Network data
     generator = ElectricalNetworkGenerator(num_roots, num_levels, num_children_per_node)
