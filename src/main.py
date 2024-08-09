@@ -17,8 +17,11 @@ class ElectricalNetworkGenerator:
             str_board_phase = "Three-phase"
         board = {
             "node_id": self.node_id,
-            "parent_node_id": parent_id,
-            "name": f"DistributionBoard: Level: {level}",
+            "board_parent_node_id": parent_id,
+            "name": f"DistributionBoard: Level: {level}: {self.node_id}",
+            "board_section" : random.choice(["NORTH", "SOUTH","EAST","WEST","EXTERNAL"]),The resulting graphblooks as follows:
+            
+            "board_floor": random.choice(["LG", "G","1ST","2ND","3RD"]),
             "phase": str_board_phase,
             "circuits": []
         }
@@ -32,9 +35,9 @@ class ElectricalNetworkGenerator:
         self.node_id += 1
 
         if level < self.num_levels:
-            num_of_ccts = 3
+            num_of_ccts = 1
             # num_children = random.randint(1, self.num_children_per_node)
-            num_children = 4
+            num_children = 2
             for cct_index in range(num_of_ccts):
                 if str_board_phase == "Three-phase":
                     lst_cct_phases = ["L1", "L2", "L3"]
@@ -47,9 +50,10 @@ class ElectricalNetworkGenerator:
                 for str_cct_phase in lst_cct_phases:
                     circuit = {
                         "circuit_number": cct_index,
+                        "circuit_level" : level,
                         "circuit_phase": str_cct_phase,
                         "circuit_type": circuit_type,
-                        "child_node_id": None
+                        "child_board_node_id": None
                     }
 
                     if num_children > 0:
@@ -58,7 +62,8 @@ class ElectricalNetworkGenerator:
                         str_print = (f"level:{level}, circuit-{cct_index} phase-{str_cct_phase} circuit type={circuit_type} not final")
                         print(Indent(str_print, 5*level))
                         child_board = self.generate_board(level + 1, cct_index, str_board_phase, current_id)
-                        circuit["child_node_id"] = child_board["node_id"]
+                        #set the child node for the cct
+                        circuit["child_board_node_id"] = child_board["node_id"]
 
                     board["circuits"].append(circuit)
 
@@ -93,7 +98,7 @@ def main():
     # Parameters
     num_roots = 1
     num_levels = 3
-    num_children_per_node = 2
+    num_children_per_node = 3
 
     # Generate Electrical Distribution Network data
     generator = ElectricalNetworkGenerator(num_roots, num_levels, num_children_per_node)
